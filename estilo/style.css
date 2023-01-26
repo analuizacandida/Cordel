@@ -1,1 +1,83 @@
 @charset "UFT-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+    :root {
+        --fonte1: arial;
+        --fonte2:'Great Vibes', cursive;
+        --fonte3: 'Inconsolata', monospace; 
+    }
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    font-family: var(--fonte1);
+    min-height: 100vh;
+    background-color: rgb(243, 197, 212);
+
+}
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: var(--fonte2);
+
+}
+header > h1 {
+    padding-top: 50px;
+    font-variant: normal;
+    font-weight: lighter;
+    font-size: 10vw;
+}
+header > p {
+    padding-bottom: 50px;
+    font-variant: normal;
+    font-weight: lighter;
+    font-size: 0.7em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    
+}
+section.normal {
+    background-color: white;
+    color:black;
+}
+
+section.imagem {
+    background-color: rgb(247, 160, 247);
+    color: white;
+}
+
+section.imagem > p {
+    display: inline-block;
+    padding: 5px;
+   
+    background-color: rgba(0, 0, 0, 0.205);
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
