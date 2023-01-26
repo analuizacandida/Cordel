@@ -58,6 +58,9 @@ section {
     font-family: var(--fonte3);
     
 }
+section > p {
+    padding-bottom: 2em;
+}
 section.normal {
     background-color: white;
     color:black;
@@ -66,18 +69,31 @@ section.normal {
 section.imagem {
     background-color: rgb(247, 160, 247);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(58, 58, 58, 0.795) ; 
+    background-attachment: fixed;
 }
 
 section.imagem > p {
     display: inline-block;
     padding: 5px;
-   
     background-color: rgba(0, 0, 0, 0.205);
+}
+section#img01 {
+    background-image: url('../imagens/insect-7511200_960_720.jpg');
+    background-position: right 35% bottom 45%;;
+    background-size: cover;
+}
+
+section#img02 {
+    background-image: url('../imagens/rose-2101475_960_720.jpg');
+    background-position: top;
+    background-size: cover;
 }
 
 footer {
     background-color: black;
     color: white;
-    text-align: center;
+    text-align: right center ;
     padding: 10px;
+    
 }
